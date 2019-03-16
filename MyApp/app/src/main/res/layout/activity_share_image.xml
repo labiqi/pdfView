@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2C3338">
+
+    <RelativeLayout
+        android:id="@+id/layoutToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:id="@+id/btnClose"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="取消"
+            android:textColor="#FF3C2E"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="图片分享"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_above="@+id/layoutOption"
+        android:layout_below="@+id/layoutToolbar"
+        android:layout_marginBottom="18dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:fillViewport="true">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginBottom="90dp">
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/layout_tips"
+            android:layout_weight="1"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="0dp"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:background="#FFF1B7"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/common_success_black"/>
+
+                <TextView
+                    android:id="@+id/tips_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="已保存"
+                    android:textColor="#FF2C3338"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="-3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/counter_help"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layoutOption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp">
+
+        <Button
+            android:id="@+id/btn_share_wx_friend"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageView"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawablePadding="8dp"
+            android:drawableTop="@drawable/fz_wx_friend_dark"
+            android:gravity="center"
+            android:text="分享给微信好友"
+            android:textColor="#F5F8FA"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_share_wx_timeline"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawablePadding="8dp"
+            android:drawableTop="@drawable/fz_wx_timeline_dark"
+            android:gravity="center"
+            android:text="分享到朋友圈"
+            android:textColor="#F5F8FA"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_save_image"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawablePadding="8dp"
+            android:drawableTop="@drawable/fz_share_download_dark"
+            android:gravity="center"
+            android:text="保存到相册"
+            android:textColor="#F5F8FA"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

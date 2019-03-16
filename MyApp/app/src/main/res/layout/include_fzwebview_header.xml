@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_webview_title_bar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/title_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:layout_centerVertical="true">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <ImageButton
+            android:id="@+id/ib_fz_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="14dp"
+            android:background="@null"
+            android:src="@drawable/fz_type"
+            android:visibility="gone"/>
+        <ImageButton
+            android:id="@+id/ib_fz_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:background="@null"
+            android:src="@drawable/fz_share"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ib_fz_back"
+        android:layout_width="53dp"
+        android:layout_height="35dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:drawableLeft="@drawable/webview_back"
+        android:background="@null"
+        android:button="@null"
+        android:drawablePadding="0dp"
+        android:text="返回"
+        android:textColor="#FF5C656B"
+        android:textSize="17sp"/>
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/ib_fz_close"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/ib_fz_back"
+        android:background="@null"
+        android:button="@null"
+        android:text="关闭"
+        android:textColor="#FF5C656B"
+        android:textSize="17sp"/>
+
+    <TextView
+        android:id="@+id/tv_fz_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="资讯"
+        android:textColor="@color/text_black"
+        android:textSize="22sp" />
+
+</RelativeLayout>

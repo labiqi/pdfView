@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="title_bg">#F8F8F8</color>
+    <color name="text_black">#333333</color>
+
+    <color name="share_text_gray">#666666</color>
+    <color name="share_text_black">#333333</color>
+    <color name="share_divider_gray">#E6E6E6</color>
+
+    <color name="_6a788f">#6A788F</color>
+    <color name="_ff6023">#FF6023</color>
+</resources>

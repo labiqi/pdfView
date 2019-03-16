@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="customDialogThemeAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/custom_dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/custom_dialog_exit</item>
+    </style>
+
+    <style name="SwipeBackTheme" parent="android:Theme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:activityCloseExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="ZntgProgressBar" parent="android:Widget.ProgressBar.Small">
+        <item name="android:indeterminateDrawable">@drawable/zntg_progress</item>
+    </style>
+</resources>

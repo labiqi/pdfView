@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/dialog_font_bg"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:id="@+id/title_share"
+        android:text="文章分享"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="22sp"/>
+
+    <!--android:visibility="gone"-->
+    <!--<Button-->
+        <!--android:id="@+id/btn_share_image"-->
+        <!--android:drawableLeft="@drawable/fz_share_image_red"-->
+        <!--android:drawablePadding="0dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="44dp"-->
+        <!--android:background="@drawable/dialog_button_bg"-->
+        <!--android:text="图片分享"-->
+        <!--android:textColor="#333333"-->
+        <!--android:textSize="15sp" />-->
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/share_image"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/dialog_button_bg"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/sync_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/fz_share_image_red"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:duplicateParentState="true"
+            android:text="图片分享"
+            android:textColor="#333333"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:overScrollMode="never"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/fz_close_btn"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/dialog_font_bg"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:textSize="20sp"
+        android:text="关闭"
+        android:textColor="#EB1F10"
+        android:layout_marginBottom="8dp"/>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TabsView">
+        <attr name="tabItem" format="reference"></attr>
+        <attr name="tabItemWidth" format="enum">
+            <enum name="match_parent" value="-1"></enum>
+            <enum name="wrap_content" value="-2"></enum>
+        </attr>
+        <attr name="tabPadding" format="dimension"></attr>
+    </declare-styleable>
+</resources>

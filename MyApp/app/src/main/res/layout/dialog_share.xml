@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/dialog_font_bg"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:id="@+id/title_share"
+        android:text="文章分享"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="22sp"/>
+
+    <!--android:visibility="gone"-->
+    <!--<Button-->
+        <!--android:id="@+id/btn_share_image"-->
+        <!--android:drawableLeft="@drawable/fz_share_image_red"-->
+        <!--android:drawablePadding="0dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="44dp"-->
+        <!--android:background="@drawable/dialog_button_bg"-->
+        <!--android:text="图片分享"-->
+        <!--android:textColor="#333333"-->
+        <!--android:textSize="15sp" />-->
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/share_image"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/dialog_button_bg"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/sync_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/fz_share_image_red"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:duplicateParentState="true"
+            android:text="图片分享"
+            android:textColor="#333333"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/share_fz_first_ll"
+            android:layout_width="match_parent"
+            android:layout_height="105dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/share_fz_wx_friend"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="8dp"
+                android:drawableTop="@drawable/fz_wx_friend"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/wx_friend"
+                android:textColor="@color/share_text_gray"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/share_fz_wx_timeline"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="8dp"
+                android:drawableTop="@drawable/fz_wx_timeline"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/wx_timeline"
+                android:textColor="@color/share_text_gray"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/share_fz_sina_weibo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="8dp"
+                android:drawableTop="@drawable/fz_sina_weibo"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/sina_weibo"
+                android:textColor="@color/share_text_gray"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/share_fz_second_ll"
+            android:layout_width="match_parent"
+            android:layout_height="105dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/share_fz_qq_friend"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="8dp"
+                android:drawableTop="@drawable/fz_qq_friend"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/qq_friend"
+                android:textColor="@color/share_text_gray"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/share_fz_qq_zone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="8dp"
+                android:drawableTop="@drawable/fz_qq_zone"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/qq_zone"
+                android:textColor="@color/share_text_gray"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/share_fz_copy_link"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="8dp"
+                android:drawableTop="@drawable/fz_copy_link"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/copy_link"
+                android:textColor="@color/share_text_gray"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/fz_close_btn"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/dialog_font_bg"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:textSize="20sp"
+        android:text="关闭"
+        android:textColor="#EB1F10"
+        android:layout_marginBottom="8dp"/>
+</LinearLayout>

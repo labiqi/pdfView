@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">MyApp</string>
+    <string name="insert">插入</string>
+    <string name="query">查询</string>
+    <string name="querys">查询所有数据</string>
+    <string name="update">修改</string>
+    <string name="delete">删除</string>
+    <string name="delete_all">删除所有</string>
+    <string name="com_load_fail">加载失败</string>
+    <string name="complete">完成</string>
+    <string name="nextItem">下一项</string>
+    <string name="cancel">取消</string>
+
+    <string name="wx_friend">微信好友</string>
+    <string name="wx_timeline">朋友圈</string>
+    <string name="qq_friend">QQ好友</string>
+    <string name="qq_zone">QQ空间</string>
+    <string name="sina_weibo">新浪微博</string>
+    <string name="copy_link">复制链接</string>
+
+    <string name="copy_success">复制成功</string>
+    <string name="copy_failure">复制失败</string>
+
+    <string name="noRelevantInformation">暂无相关信息</string>
+
+    <string name="com_loading">加载中…</string>
+    <string name="com_no_data">暂无数据</string>
+    <string name="click_to_retry">点击重试</string>
+    <string name="com_no_sd_card">未检测到SD卡</string>
+
+
+</resources>
